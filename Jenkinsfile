@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone Code') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/Y-Vishanth/portfolio-devops.git'
+                checkout scm
             }
         }
 
